@@ -1,19 +1,22 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Menu, X, Phone, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const navLinks = [
-  { name: "Главная", path: "/" },
-  { name: "Услуги", path: "/services" },
-  { name: "Галерея", path: "/gallery" },
-  { name: "Отзывы", path: "/reviews" },
-  { name: "Контакты", path: "/contact" },
-];
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
+
+  const navLinks = [
+    { name: t("nav.home"), path: "/" },
+    { name: t("nav.services"), path: "/services" },
+    { name: t("nav.gallery"), path: "/gallery" },
+    { name: t("nav.reviews"), path: "/reviews" },
+    { name: t("nav.contact"), path: "/contact" },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
@@ -49,22 +52,26 @@ export const Navbar = () => {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             <a href="tel:+41791234567" className="flex items-center gap-2 text-sm font-medium text-foreground">
               <Phone className="w-4 h-4 text-accent" />
               +41 79 123 45 67
             </a>
             <Button variant="accent" asChild>
-              <Link to="/contact">Записаться</Link>
+              <Link to="/contact">{t("nav.book")}</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-foreground"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="md:hidden flex items-center gap-3">
+            <LanguageSwitcher />
+            <button
+              className="p-2 text-foreground"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -91,7 +98,7 @@ export const Navbar = () => {
                   +41 79 123 45 67
                 </a>
                 <Button variant="accent" className="w-full" asChild>
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>Записаться</Link>
+                  <Link to="/contact" onClick={() => setIsOpen(false)}>{t("nav.book")}</Link>
                 </Button>
               </div>
             </div>

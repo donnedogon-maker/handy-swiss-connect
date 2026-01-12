@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Wrench, Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucide-react";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
@@ -18,21 +21,20 @@ export const Footer = () => {
               </div>
             </Link>
             <p className="text-sm text-primary-foreground/70 leading-relaxed">
-              Профессиональные услуги по ремонту и обслуживанию дома в Швейцарии. 
-              Качество и надежность с 2010 года.
+              {t("footer.description")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-6">Быстрые ссылки</h4>
+            <h4 className="font-semibold mb-6">{t("footer.quickLinks")}</h4>
             <ul className="space-y-3">
               {[
-                { name: "О нас", path: "/services" },
-                { name: "Услуги", path: "/services" },
-                { name: "Галерея работ", path: "/gallery" },
-                { name: "Отзывы", path: "/reviews" },
-                { name: "Контакты", path: "/contact" },
+                { name: t("footer.about"), path: "/services" },
+                { name: t("nav.services"), path: "/services" },
+                { name: t("nav.gallery"), path: "/gallery" },
+                { name: t("nav.reviews"), path: "/reviews" },
+                { name: t("footer.contact"), path: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -48,7 +50,7 @@ export const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-6">Контакты</h4>
+            <h4 className="font-semibold mb-6">{t("footer.contact")}</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-accent mt-0.5" />
@@ -76,22 +78,22 @@ export const Footer = () => {
 
           {/* Hours */}
           <div>
-            <h4 className="font-semibold mb-6">Часы работы</h4>
+            <h4 className="font-semibold mb-6">{t("footer.hours")}</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-accent" />
                 <span className="text-sm text-primary-foreground/70">
-                  Пн-Пт: 08:00 - 18:00
+                  {t("contact.info.weekdays")}
                 </span>
               </li>
               <li className="flex items-center gap-3 pl-8">
                 <span className="text-sm text-primary-foreground/70">
-                  Сб: 09:00 - 14:00
+                  {t("contact.info.saturday")}
                 </span>
               </li>
               <li className="flex items-center gap-3 pl-8">
                 <span className="text-sm text-primary-foreground/70">
-                  Вс: выходной
+                  {t("footer.sunday")}
                 </span>
               </li>
             </ul>
@@ -111,14 +113,14 @@ export const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/60">
-            © 2024 HandyMan Swiss. Все права защищены.
+            {t("footer.copyright")}
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-primary-foreground/60 hover:text-accent transition-colors">
-              Политика конфиденциальности
+              {t("footer.privacy")}
             </a>
             <a href="#" className="text-sm text-primary-foreground/60 hover:text-accent transition-colors">
-              Условия использования
+              {t("footer.terms")}
             </a>
           </div>
         </div>

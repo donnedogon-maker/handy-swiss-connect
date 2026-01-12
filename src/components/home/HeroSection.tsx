@@ -1,15 +1,18 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, ArrowRight, Star } from "lucide-react";
 import heroImage from "@/assets/hero-handyman.jpg";
 
-const benefits = [
-  "Швейцарское качество",
-  "Гарантия на работы",
-  "Бесплатная оценка",
-];
-
 export const HeroSection = () => {
+  const { t } = useTranslation();
+
+  const benefits = [
+    t("hero.benefits.quality"),
+    t("hero.benefits.warranty"),
+    t("hero.benefits.estimate"),
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background */}
@@ -32,17 +35,16 @@ export const HeroSection = () => {
               ))}
             </div>
             <span className="text-sm font-medium text-primary-foreground">
-              4.9/5 на основе 200+ отзывов
+              {t("hero.rating")}
             </span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Профессиональный <span className="text-accent">HandyMan</span> сервис в Швейцарии
+            {t("hero.title")} <span className="text-accent">{t("hero.titleHighlight")}</span> {t("hero.titleEnd")}
           </h1>
           
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            От мелкого ремонта до капитальных работ — мы решаем любые бытовые задачи 
-            с швейцарской точностью и немецким качеством.
+            {t("hero.description")}
           </p>
 
           {/* Benefits */}
@@ -62,12 +64,12 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <Button variant="hero" size="xl" asChild>
               <Link to="/contact">
-                Записаться онлайн
+                {t("hero.cta")}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
             <Button variant="hero-outline" size="xl" asChild>
-              <Link to="/services">Наши услуги</Link>
+              <Link to="/services">{t("hero.ctaServices")}</Link>
             </Button>
           </div>
         </div>

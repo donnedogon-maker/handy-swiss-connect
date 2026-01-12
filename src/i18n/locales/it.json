@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "gallery": "Galleria",
+    "reviews": "Recensioni",
+    "contact": "Contatti",
+    "book": "Prenota"
+  },
+  "hero": {
+    "rating": "4.9/5 basato su 200+ recensioni",
+    "title": "Servizio",
+    "titleHighlight": "HandyMan",
+    "titleEnd": "professionale in Svizzera",
+    "description": "Dalle piccole riparazioni alle grandi ristrutturazioni — gestiamo tutti i lavori domestici con precisione svizzera e qualità tedesca.",
+    "benefits": {
+      "quality": "Qualità Svizzera",
+      "warranty": "Garanzia lavori",
+      "estimate": "Preventivo gratuito"
+    },
+    "cta": "Prenota Online",
+    "ctaServices": "I Nostri Servizi"
+  },
+  "services": {
+    "label": "I Nostri Servizi",
+    "title": "Soluzioni complete per la tua casa",
+    "description": "Offriamo una vasta gamma di servizi di riparazione e manutenzione. Ogni progetto viene realizzato con la massima qualità.",
+    "viewAll": "Tutti i Servizi",
+    "items": {
+      "repair": {
+        "title": "Riparazioni Generali",
+        "description": "Piccole e medie riparazioni, montaggio mobili, appendere mensole e quadri"
+      },
+      "painting": {
+        "title": "Lavori di Pittura",
+        "description": "Pittura di pareti, soffitti e facciate. Finiture decorative"
+      },
+      "electrical": {
+        "title": "Elettricità",
+        "description": "Installazione di prese, interruttori, apparecchi illuminanti. Diagnostica"
+      },
+      "plumbing": {
+        "title": "Idraulica",
+        "description": "Riparazione e installazione idraulica, eliminazione perdite"
+      },
+      "carpentry": {
+        "title": "Falegnameria",
+        "description": "Lavori in legno, installazione porte, riparazione parquet"
+      },
+      "renovation": {
+        "title": "Ristrutturazione",
+        "description": "Ristrutturazione completa di appartamenti e case chiavi in mano"
+      },
+      "furniture": {
+        "title": "Montaggio Mobili",
+        "description": "Montaggio professionale di mobili di qualsiasi complessità. IKEA, cucine, armadi"
+      },
+      "security": {
+        "title": "Sicurezza Casa",
+        "description": "Installazione sistemi di sicurezza, serrature, citofoni e videosorveglianza"
+      },
+      "moving": {
+        "title": "Servizi Trasloco",
+        "description": "Assistenza trasloco: imballaggio, trasporto, montaggio/smontaggio mobili"
+      }
+    },
+    "features": {
+      "ikea": "Mobili IKEA",
+      "curtains": "Installazione tende",
+      "shelves": "Appendere mensole",
+      "minor": "Piccole riparazioni",
+      "walls": "Pittura pareti",
+      "decorative": "Intonaco decorativo",
+      "wallpaper": "Carta da parati",
+      "restoration": "Restauro",
+      "outlets": "Installazione prese",
+      "lighting": "Installazione illuminazione",
+      "diagnostics": "Diagnostica",
+      "rewiring": "Rifacimento impianto",
+      "installation": "Installazione rubinetteria",
+      "leaks": "Riparazione perdite",
+      "cleaning": "Spurgo scarichi",
+      "pipes": "Sostituzione tubature",
+      "doors": "Installazione porte",
+      "parquet": "Riparazione parquet",
+      "custom": "Mobili su misura",
+      "design": "Progetto design",
+      "rough": "Lavori grezzi",
+      "finishing": "Finiture",
+      "furnishing": "Arredamento",
+      "kitchens": "Cucine",
+      "wardrobes": "Armadi",
+      "children": "Mobili bambini",
+      "locks": "Sostituzione serrature",
+      "intercom": "Citofoni",
+      "cctv": "Videosorveglianza",
+      "sensors": "Sensori",
+      "packing": "Imballaggio",
+      "transport": "Trasporto",
+      "disassembly": "Smontaggio",
+      "assembly": "Montaggio in loco"
+    },
+    "pricing": {
+      "from": "da",
+      "hour": "/ora",
+      "sqm": "/m²",
+      "negotiable": "su preventivo"
+    },
+    "order": "Ordina",
+    "notFound": {
+      "title": "Non hai trovato quello che cercavi?",
+      "description": "Contattaci — risolviamo qualsiasi problema domestico!",
+      "cta": "Contattaci"
+    }
+  },
+  "testimonials": {
+    "label": "Recensioni Clienti",
+    "title": "Cosa dicono i nostri clienti",
+    "description": "Più di 500 clienti soddisfatti ci affidano le loro case. Le loro recensioni sono la migliore conferma della nostra qualità.",
+    "viewAll": "Tutte le Recensioni"
+  },
+  "reviews": {
+    "title": "Recensioni Clienti",
+    "description": "L'opinione dei nostri clienti è la migliore conferma della qualità. Leggi le recensioni reali sul nostro lavoro.",
+    "stats": {
+      "projects": "Progetti completati",
+      "rating": "Valutazione media",
+      "satisfied": "Clienti soddisfatti",
+      "experience": "Anni di esperienza"
+    },
+    "helpful": "Utile",
+    "cta": {
+      "title": "Unisciti ai nostri clienti soddisfatti",
+      "description": "Ordina i nostri servizi e verifica la qualità di persona!",
+      "button": "Prenota Online"
+    }
+  },
+  "gallery": {
+    "title": "Galleria Lavori",
+    "description": "Guarda esempi dei nostri progetti. Ogni lavoro è eseguito con attenzione ai dettagli e qualità svizzera.",
+    "categories": {
+      "all": "Tutti",
+      "bathrooms": "Bagni",
+      "kitchens": "Cucine",
+      "terraces": "Terrazze",
+      "painting": "Pittura",
+      "electrical": "Elettricità",
+      "furniture": "Mobili"
+    },
+    "items": {
+      "bathroom": "Ristrutturazione bagno",
+      "kitchen": "Installazione cucina",
+      "terrace": "Costruzione terrazza",
+      "painting": "Pittura soggiorno",
+      "electrical": "Installazione illuminazione",
+      "furniture": "Montaggio mobili"
+    },
+    "locations": {
+      "zurich": "Zurigo",
+      "geneva": "Ginevra",
+      "bern": "Berna",
+      "basel": "Basilea",
+      "lausanne": "Losanna",
+      "lucerne": "Lucerna"
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "description": "Invia una richiesta online o contattaci in qualsiasi modo. Rispondiamo entro 30 minuti!",
+    "info": {
+      "title": "Informazioni di Contatto",
+      "phone": "Telefono",
+      "email": "E-mail",
+      "address": "Indirizzo",
+      "hours": "Orari di apertura",
+      "weekdays": "Lun-Ven: 08:00 - 18:00",
+      "saturday": "Sab: 09:00 - 14:00"
+    },
+    "benefits": {
+      "title": "Perché noi?",
+      "estimate": "Preventivo gratuito",
+      "response": "Risposta entro 30 minuti",
+      "warranty": "Garanzia su tutti i lavori",
+      "fixed": "Prezzi fissi"
+    },
+    "form": {
+      "title": "Prenotazione Online",
+      "description": "Compila il modulo e ti contatteremo per conferma",
+      "name": "Il tuo Nome",
+      "namePlaceholder": "Mario Rossi",
+      "phone": "Telefono",
+      "email": "E-mail",
+      "date": "Data preferita",
+      "service": "Tipo di Servizio",
+      "servicePlaceholder": "Seleziona un servizio",
+      "message": "Descrizione del lavoro",
+      "messagePlaceholder": "Descrivi cosa deve essere fatto...",
+      "submit": "Invia richiesta",
+      "submitting": "Invio in corso...",
+      "success": "Richiesta inviata!",
+      "successDescription": "Ti contatteremo entro 30 minuti."
+    },
+    "services": {
+      "repair": "Riparazioni generali",
+      "painting": "Lavori di pittura",
+      "electrical": "Elettricità",
+      "plumbing": "Idraulica",
+      "carpentry": "Falegnameria",
+      "furniture": "Montaggio mobili",
+      "renovation": "Ristrutturazione",
+      "other": "Altro"
+    },
+    "map": "La mappa sarà qui"
+  },
+  "cta": {
+    "title": "Hai bisogno di aiuto con le riparazioni?",
+    "description": "Invia una richiesta online o chiamaci — ti contatteremo entro 30 minuti con un preventivo gratuito.",
+    "book": "Prenota Online",
+    "estimate": "Preventivo gratuito",
+    "response": "Risposta in 30 min",
+    "quality": "Garanzia qualità"
+  },
+  "footer": {
+    "description": "Servizi professionali di riparazione e manutenzione in Svizzera. Qualità e affidabilità dal 2010.",
+    "quickLinks": "Link Rapidi",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "hours": "Orari di apertura",
+    "sunday": "Dom: chiuso",
+    "copyright": "© 2024 HandyMan Swiss. Tutti i diritti riservati.",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di utilizzo"
+  },
+  "chat": {
+    "title": "Supporto HandyMan",
+    "subtitle": "Rispondiamo di solito entro 5 minuti",
+    "greeting": "Ciao! 👋 Come posso aiutarti? Fai una domanda sui nostri servizi o lascia i tuoi contatti per essere richiamato.",
+    "placeholder": "Scrivi un messaggio...",
+    "autoReply": "Grazie per il messaggio! Il nostro responsabile ti contatterà a breve. Oppure chiamaci: +41 79 123 45 67"
+  }
+}

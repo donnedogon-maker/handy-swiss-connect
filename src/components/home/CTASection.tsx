@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Phone, Clock, CheckCircle2 } from "lucide-react";
 
 export const CTASection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-24 bg-primary relative overflow-hidden">
       {/* Decorative elements */}
@@ -12,16 +15,15 @@ export const CTASection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-            Нужна помощь с ремонтом?
+            {t("cta.title")}
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-            Оставьте заявку онлайн или позвоните нам — мы свяжемся с вами в течение 
-            30 минут и предоставим бесплатную оценку работ.
+            {t("cta.description")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button variant="hero" size="xl" asChild>
-              <Link to="/contact">Записаться онлайн</Link>
+              <Link to="/contact">{t("cta.book")}</Link>
             </Button>
             <Button variant="hero-outline" size="xl" asChild>
               <a href="tel:+41791234567">
@@ -34,15 +36,15 @@ export const CTASection = () => {
           <div className="flex flex-wrap justify-center gap-8">
             <div className="flex items-center gap-2 text-primary-foreground/80">
               <CheckCircle2 className="w-5 h-5 text-accent" />
-              <span>Бесплатная оценка</span>
+              <span>{t("cta.estimate")}</span>
             </div>
             <div className="flex items-center gap-2 text-primary-foreground/80">
               <Clock className="w-5 h-5 text-accent" />
-              <span>Ответ за 30 минут</span>
+              <span>{t("cta.response")}</span>
             </div>
             <div className="flex items-center gap-2 text-primary-foreground/80">
               <CheckCircle2 className="w-5 h-5 text-accent" />
-              <span>Гарантия качества</span>
+              <span>{t("cta.quality")}</span>
             </div>
           </div>
         </div>

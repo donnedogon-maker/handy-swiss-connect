@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { MessageCircle, X, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -10,14 +11,15 @@ interface Message {
 }
 
 export const ChatWidget = () => {
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Здравствуйте! 👋 Чем могу помочь? Задайте вопрос о наших услугах или оставьте контакт для связи.",
+      text: t("chat.greeting"),
       isUser: false,
-      time: "Сейчас",
+      time: new Date().toLocaleTimeString(i18n.language, { hour: "2-digit", minute: "2-digit" }),
     },
   ]);
 
@@ -28,7 +30,7 @@ export const ChatWidget = () => {
       id: messages.length + 1,
       text: message,
       isUser: true,
-      time: new Date().toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" }),
+      time: new Date().toLocaleTimeString(i18n.language, { hour: "2-digit", minute: "2-digit" }),
     };
 
     setMessages([...messages, newMessage]);
@@ -38,9 +40,9 @@ export const ChatWidget = () => {
     setTimeout(() => {
       const reply: Message = {
         id: messages.length + 2,
-        text: "Спасибо за сообщение! Наш менеджер свяжется с вами в ближайшее время. Или позвоните нам: +41 79 123 45 67",
+        text: t("chat.autoReply"),
         isUser: false,
-        time: new Date().toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" }),
+        time: new Date().toLocaleTimeString(i18n.language, { hour: "2-digit", minute: "2-digit" }),
       };
       setMessages((prev) => [...prev, reply]);
     }, 1000);
@@ -70,8 +72,8 @@ export const ChatWidget = () => {
                 <MessageCircle className="w-5 h-5 text-accent" />
               </div>
               <div>
-                <h4 className="font-semibold text-primary-foreground">HandyMan Support</h4>
-                <p className="text-xs text-primary-foreground/70">Обычно отвечаем за 5 минут</p>
+                <h4 className="font-semibold text-primary-foreground">{t("chat.title")}</h4>
+                <p className="text-xs text-primary-foreground/70">{t("chat.subtitle")}</p>
               </div>
             </div>
           </div>
@@ -107,7 +109,7 @@ export const ChatWidget = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 onKeyPress={(e) => e.key === "Enter" && sendMessage()}
-                placeholder="Введите сообщение..."
+                placeholder={t("chat.placeholder")}
                 className="flex-1 bg-muted rounded-full px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               />
               <Button

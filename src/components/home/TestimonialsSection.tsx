@@ -1,52 +1,54 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Star, Quote, ArrowRight } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Анна Мюллер",
-    location: "Цюрих",
+    nameKey: "Anna Müller",
+    locationKey: "gallery.locations.zurich",
     rating: 5,
-    text: "Отличный сервис! Марко починил все протечки в ванной за один визит. Очень пунктуальный и аккуратный мастер.",
+    textKey: "Excellent service! Marco fixed all the leaks in our bathroom in one visit. Very punctual and neat craftsman.",
     avatar: "AM",
   },
   {
-    name: "Пьер Дюбуа",
-    location: "Женева",
+    nameKey: "Pierre Dubois",
+    locationKey: "gallery.locations.geneva",
     rating: 5,
-    text: "Заказывал сборку кухни IKEA. Работа выполнена безупречно, всё ровно и качественно. Рекомендую!",
+    textKey: "Ordered IKEA kitchen assembly. The work was done flawlessly, everything is level and quality. Highly recommend!",
     avatar: "PD",
   },
   {
-    name: "Томас Шмидт",
-    location: "Берн",
+    nameKey: "Thomas Schmidt",
+    locationKey: "gallery.locations.bern",
     rating: 5,
-    text: "Полная реновация квартиры за 3 недели. Результат превзошёл ожидания. Профессионалы своего дела!",
+    textKey: "Complete apartment renovation in 3 weeks. The result exceeded expectations. True professionals!",
     avatar: "TS",
   },
 ];
 
 export const TestimonialsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-            Отзывы клиентов
+            {t("testimonials.label")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
-            Что говорят наши клиенты
+            {t("testimonials.title")}
           </h2>
           <p className="text-muted-foreground">
-            Более 500 довольных клиентов доверяют нам свои дома. 
-            Их отзывы — лучшее подтверждение качества нашей работы.
+            {t("testimonials.description")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
-              key={testimonial.name}
+              key={testimonial.avatar}
               className="bg-card rounded-2xl p-8 shadow-card relative"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -59,7 +61,7 @@ export const TestimonialsSection = () => {
               </div>
 
               <p className="text-foreground mb-6 leading-relaxed">
-                "{testimonial.text}"
+                "{testimonial.textKey}"
               </p>
 
               <div className="flex items-center gap-4">
@@ -67,8 +69,8 @@ export const TestimonialsSection = () => {
                   <span className="text-accent font-semibold">{testimonial.avatar}</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                  <p className="font-semibold text-foreground">{testimonial.nameKey}</p>
+                  <p className="text-sm text-muted-foreground">{t(testimonial.locationKey)}</p>
                 </div>
               </div>
             </div>
@@ -78,7 +80,7 @@ export const TestimonialsSection = () => {
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
             <Link to="/reviews">
-              Все отзывы
+              {t("testimonials.viewAll")}
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </Button>

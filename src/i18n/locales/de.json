@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "gallery": "Galerie",
+    "reviews": "Bewertungen",
+    "contact": "Kontakt",
+    "book": "Termin buchen"
+  },
+  "hero": {
+    "rating": "4.9/5 basierend auf 200+ Bewertungen",
+    "title": "Professioneller",
+    "titleHighlight": "HandyMan",
+    "titleEnd": "Service in der Schweiz",
+    "description": "Von kleinen Reparaturen bis zu grossen Renovierungen — wir erledigen alle Haushaltsaufgaben mit Schweizer Präzision und deutscher Qualität.",
+    "benefits": {
+      "quality": "Schweizer Qualität",
+      "warranty": "Arbeitsgarantie",
+      "estimate": "Kostenlose Schätzung"
+    },
+    "cta": "Online buchen",
+    "ctaServices": "Unsere Dienstleistungen"
+  },
+  "services": {
+    "label": "Unsere Dienstleistungen",
+    "title": "Umfassende Lösungen für Ihr Zuhause",
+    "description": "Wir bieten ein breites Spektrum an Reparatur- und Wartungsdiensten für Ihr Zuhause. Jedes Projekt wird mit höchster Qualität ausgeführt.",
+    "viewAll": "Alle Dienstleistungen",
+    "items": {
+      "repair": {
+        "title": "Allgemeine Reparaturen",
+        "description": "Kleine und mittlere Reparaturen, Möbelmontage, Regale und Bilder aufhängen"
+      },
+      "painting": {
+        "title": "Malerarbeiten",
+        "description": "Wand-, Decken- und Fassadenanstrich. Dekorative Oberflächen"
+      },
+      "electrical": {
+        "title": "Elektrik",
+        "description": "Installation von Steckdosen, Schaltern, Leuchten. Diagnose"
+      },
+      "plumbing": {
+        "title": "Sanitär",
+        "description": "Sanitär-Reparatur und -Installation, Leckbeseitigung"
+      },
+      "carpentry": {
+        "title": "Schreinerarbeiten",
+        "description": "Holzarbeiten, Türinstallation, Parkettreparatur"
+      },
+      "renovation": {
+        "title": "Renovierung",
+        "description": "Komplettrenovierung von Wohnungen und Häusern schlüsselfertig"
+      },
+      "furniture": {
+        "title": "Möbelmontage",
+        "description": "Professionelle Montage von Möbeln jeder Komplexität. IKEA, Küchen, Schränke"
+      },
+      "security": {
+        "title": "Haussicherheit",
+        "description": "Installation von Sicherheitssystemen, Schlössern, Gegensprechanlagen und Videoüberwachung"
+      },
+      "moving": {
+        "title": "Umzugsdienste",
+        "description": "Umzugshilfe: Verpackung, Transport, Möbelmontage/-demontage"
+      }
+    },
+    "features": {
+      "ikea": "IKEA-Möbel",
+      "curtains": "Gardineninstallation",
+      "shelves": "Regale aufhängen",
+      "minor": "Kleinreparaturen",
+      "walls": "Wandanstrich",
+      "decorative": "Dekorativer Putz",
+      "wallpaper": "Tapezieren",
+      "restoration": "Restaurierung",
+      "outlets": "Steckdoseninstallation",
+      "lighting": "Beleuchtungsinstallation",
+      "diagnostics": "Diagnose",
+      "rewiring": "Neuverkabelung",
+      "installation": "Armaturen-Installation",
+      "leaks": "Leckage-Reparatur",
+      "cleaning": "Abflussreinigung",
+      "pipes": "Rohraustausch",
+      "doors": "Türinstallation",
+      "parquet": "Parkettreparatur",
+      "custom": "Massanfertigung",
+      "design": "Designprojekt",
+      "rough": "Rohbauarbeiten",
+      "finishing": "Fertigstellung",
+      "furnishing": "Möblierung",
+      "kitchens": "Küchen",
+      "wardrobes": "Schränke",
+      "children": "Kindermöbel",
+      "locks": "Schlossaustausch",
+      "intercom": "Gegensprechanlage",
+      "cctv": "Videoüberwachung",
+      "sensors": "Sensoren",
+      "packing": "Verpackung",
+      "transport": "Transport",
+      "disassembly": "Demontage",
+      "assembly": "Montage vor Ort"
+    },
+    "pricing": {
+      "from": "ab",
+      "hour": "/Stunde",
+      "sqm": "/m²",
+      "negotiable": "verhandelbar"
+    },
+    "order": "Bestellen",
+    "notFound": {
+      "title": "Nicht gefunden, was Sie suchen?",
+      "description": "Kontaktieren Sie uns — wir lösen jede Haushaltsaufgabe!",
+      "cta": "Kontaktieren Sie uns"
+    }
+  },
+  "testimonials": {
+    "label": "Kundenbewertungen",
+    "title": "Was unsere Kunden sagen",
+    "description": "Mehr als 500 zufriedene Kunden vertrauen uns ihre Häuser an. Ihre Bewertungen sind die beste Bestätigung unserer Arbeitsqualität.",
+    "viewAll": "Alle Bewertungen"
+  },
+  "reviews": {
+    "title": "Kundenbewertungen",
+    "description": "Die Meinung unserer Kunden ist die beste Qualitätsbestätigung. Lesen Sie echte Bewertungen über unsere Arbeit.",
+    "stats": {
+      "projects": "Abgeschlossene Projekte",
+      "rating": "Durchschnittliche Bewertung",
+      "satisfied": "Zufriedene Kunden",
+      "experience": "Jahre Erfahrung"
+    },
+    "helpful": "Hilfreich",
+    "cta": {
+      "title": "Werden Sie Teil unserer zufriedenen Kunden",
+      "description": "Bestellen Sie unsere Dienstleistungen und überzeugen Sie sich selbst!",
+      "button": "Online buchen"
+    }
+  },
+  "gallery": {
+    "title": "Arbeitsgalerie",
+    "description": "Sehen Sie Beispiele unserer Projekte. Jede Arbeit wird mit Liebe zum Detail und Schweizer Qualität ausgeführt.",
+    "categories": {
+      "all": "Alle",
+      "bathrooms": "Badezimmer",
+      "kitchens": "Küchen",
+      "terraces": "Terrassen",
+      "painting": "Anstrich",
+      "electrical": "Elektrik",
+      "furniture": "Möbel"
+    },
+    "items": {
+      "bathroom": "Badezimmer-Renovierung",
+      "kitchen": "Kücheninstallation",
+      "terrace": "Terrassenbau",
+      "painting": "Wohnzimmeranstrich",
+      "electrical": "Beleuchtungsinstallation",
+      "furniture": "Möbelmontage"
+    },
+    "locations": {
+      "zurich": "Zürich",
+      "geneva": "Genf",
+      "bern": "Bern",
+      "basel": "Basel",
+      "lausanne": "Lausanne",
+      "lucerne": "Luzern"
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Senden Sie eine Anfrage online oder kontaktieren Sie uns auf beliebige Weise. Wir antworten innerhalb von 30 Minuten!",
+    "info": {
+      "title": "Kontaktinformationen",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "address": "Adresse",
+      "hours": "Öffnungszeiten",
+      "weekdays": "Mo-Fr: 08:00 - 18:00",
+      "saturday": "Sa: 09:00 - 14:00"
+    },
+    "benefits": {
+      "title": "Warum wir?",
+      "estimate": "Kostenlose Schätzung",
+      "response": "Antwort innerhalb von 30 Minuten",
+      "warranty": "Garantie auf alle Arbeiten",
+      "fixed": "Festpreise"
+    },
+    "form": {
+      "title": "Online-Buchung",
+      "description": "Füllen Sie das Formular aus und wir kontaktieren Sie zur Bestätigung",
+      "name": "Ihr Name",
+      "namePlaceholder": "Max Mustermann",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "date": "Wunschtermin",
+      "service": "Dienstleistungsart",
+      "servicePlaceholder": "Dienstleistung auswählen",
+      "message": "Aufgabenbeschreibung",
+      "messagePlaceholder": "Beschreiben Sie, was zu tun ist...",
+      "submit": "Anfrage senden",
+      "submitting": "Wird gesendet...",
+      "success": "Anfrage gesendet!",
+      "successDescription": "Wir kontaktieren Sie innerhalb von 30 Minuten."
+    },
+    "services": {
+      "repair": "Allgemeine Reparaturen",
+      "painting": "Malerarbeiten",
+      "electrical": "Elektrik",
+      "plumbing": "Sanitär",
+      "carpentry": "Schreinerarbeiten",
+      "furniture": "Möbelmontage",
+      "renovation": "Renovierung",
+      "other": "Sonstiges"
+    },
+    "map": "Hier wird die Karte angezeigt"
+  },
+  "cta": {
+    "title": "Brauchen Sie Hilfe bei Reparaturen?",
+    "description": "Senden Sie eine Anfrage online oder rufen Sie uns an — wir kontaktieren Sie innerhalb von 30 Minuten und erstellen ein kostenloses Angebot.",
+    "book": "Online buchen",
+    "estimate": "Kostenlose Schätzung",
+    "response": "Antwort in 30 Min.",
+    "quality": "Qualitätsgarantie"
+  },
+  "footer": {
+    "description": "Professionelle Reparatur- und Wartungsdienste in der Schweiz. Qualität und Zuverlässigkeit seit 2010.",
+    "quickLinks": "Schnelllinks",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "hours": "Öffnungszeiten",
+    "sunday": "So: geschlossen",
+    "copyright": "© 2024 HandyMan Swiss. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen"
+  },
+  "chat": {
+    "title": "HandyMan Support",
+    "subtitle": "Antworten normalerweise innerhalb von 5 Minuten",
+    "greeting": "Hallo! 👋 Wie kann ich helfen? Stellen Sie eine Frage zu unseren Dienstleistungen oder hinterlassen Sie Ihre Kontaktdaten für einen Rückruf.",
+    "placeholder": "Nachricht eingeben...",
+    "autoReply": "Vielen Dank für Ihre Nachricht! Unser Manager wird Sie in Kürze kontaktieren. Oder rufen Sie uns an: +41 79 123 45 67"
+  }
+}

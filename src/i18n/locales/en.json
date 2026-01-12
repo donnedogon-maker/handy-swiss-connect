@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "hero": {
+    "rating": "4.9/5 based on 200+ reviews",
+    "title": "Professional",
+    "titleHighlight": "HandyMan",
+    "titleEnd": "Service in Switzerland",
+    "description": "From minor repairs to major renovations — we handle all household tasks with Swiss precision and German quality.",
+    "benefits": {
+      "quality": "Swiss Quality",
+      "warranty": "Work Guarantee",
+      "estimate": "Free Estimate"
+    },
+    "cta": "Book Online",
+    "ctaServices": "Our Services"
+  },
+  "services": {
+    "label": "Our Services",
+    "title": "Comprehensive Solutions for Your Home",
+    "description": "We provide a wide range of home repair and maintenance services. Every project is executed with the highest quality.",
+    "viewAll": "All Services",
+    "items": {
+      "repair": {
+        "title": "General Repairs",
+        "description": "Minor and medium home repairs, furniture assembly, shelf and picture hanging"
+      },
+      "painting": {
+        "title": "Painting Works",
+        "description": "Wall, ceiling, and facade painting. Decorative finishes"
+      },
+      "electrical": {
+        "title": "Electrical",
+        "description": "Installation of outlets, switches, light fixtures. Diagnostics"
+      },
+      "plumbing": {
+        "title": "Plumbing",
+        "description": "Plumbing repair and installation, leak elimination"
+      },
+      "carpentry": {
+        "title": "Carpentry",
+        "description": "Woodwork, door installation, parquet repair"
+      },
+      "renovation": {
+        "title": "Renovation",
+        "description": "Complete apartment and house renovation turnkey"
+      },
+      "furniture": {
+        "title": "Furniture Assembly",
+        "description": "Professional assembly of furniture of any complexity. IKEA, kitchens, wardrobes"
+      },
+      "security": {
+        "title": "Home Security",
+        "description": "Installation of security systems, locks, intercoms and video surveillance"
+      },
+      "moving": {
+        "title": "Moving Services",
+        "description": "Moving assistance: packing, transportation, furniture assembly/disassembly"
+      }
+    },
+    "features": {
+      "ikea": "IKEA Furniture",
+      "curtains": "Curtain Installation",
+      "shelves": "Shelf Hanging",
+      "minor": "Minor Repairs",
+      "walls": "Wall Painting",
+      "decorative": "Decorative Plaster",
+      "wallpaper": "Wallpapering",
+      "restoration": "Restoration",
+      "outlets": "Outlet Installation",
+      "lighting": "Lighting Installation",
+      "diagnostics": "Diagnostics",
+      "rewiring": "Rewiring",
+      "installation": "Fixture Installation",
+      "leaks": "Leak Repair",
+      "cleaning": "Drain Cleaning",
+      "pipes": "Pipe Replacement",
+      "doors": "Door Installation",
+      "parquet": "Parquet Repair",
+      "custom": "Custom Furniture",
+      "design": "Design Project",
+      "rough": "Rough Work",
+      "finishing": "Finishing",
+      "furnishing": "Furnishing",
+      "kitchens": "Kitchens",
+      "wardrobes": "Wardrobes",
+      "children": "Children's Furniture",
+      "locks": "Lock Replacement",
+      "intercom": "Intercoms",
+      "cctv": "CCTV",
+      "sensors": "Sensors",
+      "packing": "Packing",
+      "transport": "Transportation",
+      "disassembly": "Disassembly",
+      "assembly": "Assembly on Site"
+    },
+    "pricing": {
+      "from": "from",
+      "hour": "/hour",
+      "sqm": "/m²",
+      "negotiable": "negotiable"
+    },
+    "order": "Order",
+    "notFound": {
+      "title": "Didn't find what you need?",
+      "description": "Contact us — we'll solve any household task!",
+      "cta": "Contact Us"
+    }
+  },
+  "testimonials": {
+    "label": "Customer Reviews",
+    "title": "What Our Clients Say",
+    "description": "More than 500 satisfied customers trust us with their homes. Their reviews are the best confirmation of our work quality.",
+    "viewAll": "All Reviews"
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "description": "Client opinions are the best confirmation of quality. Read real reviews about our work.",
+    "stats": {
+      "projects": "Completed Projects",
+      "rating": "Average Rating",
+      "satisfied": "Satisfied Customers",
+      "experience": "Years of Experience"
+    },
+    "helpful": "Helpful",
+    "cta": {
+      "title": "Join Our Satisfied Customers",
+      "description": "Order our services and see the quality for yourself!",
+      "button": "Book Online"
+    }
+  },
+  "gallery": {
+    "title": "Work Gallery",
+    "description": "See examples of our projects. Each work is done with attention to detail and Swiss quality.",
+    "categories": {
+      "all": "All",
+      "bathrooms": "Bathrooms",
+      "kitchens": "Kitchens",
+      "terraces": "Terraces",
+      "painting": "Painting",
+      "electrical": "Electrical",
+      "furniture": "Furniture"
+    },
+    "items": {
+      "bathroom": "Bathroom Renovation",
+      "kitchen": "Kitchen Installation",
+      "terrace": "Terrace Construction",
+      "painting": "Living Room Painting",
+      "electrical": "Lighting Installation",
+      "furniture": "Furniture Assembly"
+    },
+    "locations": {
+      "zurich": "Zurich",
+      "geneva": "Geneva",
+      "bern": "Bern",
+      "basel": "Basel",
+      "lausanne": "Lausanne",
+      "lucerne": "Lucerne"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Submit a request online or contact us in any convenient way. We'll respond within 30 minutes!",
+    "info": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Working Hours",
+      "weekdays": "Mon-Fri: 08:00 - 18:00",
+      "saturday": "Sat: 09:00 - 14:00"
+    },
+    "benefits": {
+      "title": "Why Us?",
+      "estimate": "Free estimate",
+      "response": "Response within 30 minutes",
+      "warranty": "Warranty on all work",
+      "fixed": "Fixed prices"
+    },
+    "form": {
+      "title": "Online Booking",
+      "description": "Fill out the form and we'll contact you for confirmation",
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "phone": "Phone",
+      "email": "Email",
+      "date": "Preferred Date",
+      "service": "Service Type",
+      "servicePlaceholder": "Select a service",
+      "message": "Task Description",
+      "messagePlaceholder": "Describe what needs to be done...",
+      "submit": "Submit Request",
+      "submitting": "Submitting...",
+      "success": "Request submitted!",
+      "successDescription": "We'll contact you within 30 minutes."
+    },
+    "services": {
+      "repair": "General Repairs",
+      "painting": "Painting Works",
+      "electrical": "Electrical",
+      "plumbing": "Plumbing",
+      "carpentry": "Carpentry",
+      "furniture": "Furniture Assembly",
+      "renovation": "Renovation",
+      "other": "Other"
+    },
+    "map": "Map will be here"
+  },
+  "cta": {
+    "title": "Need Help with Repairs?",
+    "description": "Submit a request online or call us — we'll contact you within 30 minutes and provide a free estimate.",
+    "book": "Book Online",
+    "estimate": "Free Estimate",
+    "response": "Response in 30 min",
+    "quality": "Quality Guarantee"
+  },
+  "footer": {
+    "description": "Professional home repair and maintenance services in Switzerland. Quality and reliability since 2010.",
+    "quickLinks": "Quick Links",
+    "about": "About Us",
+    "contact": "Contact",
+    "hours": "Working Hours",
+    "sunday": "Sun: closed",
+    "copyright": "© 2024 HandyMan Swiss. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "chat": {
+    "title": "HandyMan Support",
+    "subtitle": "Usually respond within 5 minutes",
+    "greeting": "Hello! 👋 How can I help? Ask a question about our services or leave your contact for a callback.",
+    "placeholder": "Type a message...",
+    "autoReply": "Thank you for your message! Our manager will contact you shortly. Or call us: +41 79 123 45 67"
+  }
+}
