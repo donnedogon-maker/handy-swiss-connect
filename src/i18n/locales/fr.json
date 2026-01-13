@@ -237,5 +237,15 @@
     "greeting": "Bonjour! 👋 Comment puis-je vous aider? Posez une question sur nos services ou laissez vos coordonnées pour être rappelé.",
     "placeholder": "Tapez un message...",
     "autoReply": "Merci pour votre message! Notre responsable vous contactera sous peu. Ou appelez-nous: +41 79 123 45 67"
+  },
+  "urgent": {
+    "button": "URGENT",
+    "title": "Demande de Service Urgent",
+    "subtitle": "Exécution sous 24 heures",
+    "badge": "⚡ Service Express:",
+    "description": "Nous garantissons l'arrivée d'un spécialiste sous 24 heures. Traitement prioritaire de votre demande.",
+    "submit": "Envoyer Demande Urgente",
+    "success": "Demande urgente envoyée!",
+    "successDescription": "Un spécialiste vous contactera sous 15 minutes."
   }
 }

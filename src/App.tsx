@@ -9,6 +9,7 @@ import Gallery from "./pages/Gallery";
 import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import UrgentBookingButton from "./components/UrgentBookingButton";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <UrgentBookingButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
