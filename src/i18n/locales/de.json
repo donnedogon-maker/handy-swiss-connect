@@ -237,5 +237,15 @@
     "greeting": "Hallo! 👋 Wie kann ich helfen? Stellen Sie eine Frage zu unseren Dienstleistungen oder hinterlassen Sie Ihre Kontaktdaten für einen Rückruf.",
     "placeholder": "Nachricht eingeben...",
     "autoReply": "Vielen Dank für Ihre Nachricht! Unser Manager wird Sie in Kürze kontaktieren. Oder rufen Sie uns an: +41 79 123 45 67"
+  },
+  "urgent": {
+    "button": "DRINGEND",
+    "title": "Dringende Serviceanfrage",
+    "subtitle": "Ausführung innerhalb von 24 Stunden",
+    "badge": "⚡ Express-Service:",
+    "description": "Wir garantieren die Ankunft eines Spezialisten innerhalb von 24 Stunden. Prioritätsbearbeitung Ihrer Anfrage.",
+    "submit": "Dringende Anfrage senden",
+    "success": "Dringende Anfrage gesendet!",
+    "successDescription": "Ein Spezialist wird Sie innerhalb von 15 Minuten kontaktieren."
   }
 }

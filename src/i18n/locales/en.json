@@ -237,5 +237,15 @@
     "greeting": "Hello! 👋 How can I help? Ask a question about our services or leave your contact for a callback.",
     "placeholder": "Type a message...",
     "autoReply": "Thank you for your message! Our manager will contact you shortly. Or call us: +41 79 123 45 67"
+  },
+  "urgent": {
+    "button": "URGENT",
+    "title": "Urgent Service Request",
+    "subtitle": "Execution within 24 hours",
+    "badge": "⚡ Express Service:",
+    "description": "We guarantee arrival of a specialist within 24 hours. Priority processing of your request.",
+    "submit": "Submit Urgent Request",
+    "success": "Urgent request submitted!",
+    "successDescription": "A specialist will contact you within 15 minutes."
   }
 }
