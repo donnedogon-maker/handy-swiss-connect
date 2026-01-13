@@ -6,12 +6,14 @@ import en from './locales/en.json';
 import de from './locales/de.json';
 import fr from './locales/fr.json';
 import it from './locales/it.json';
+import uk from './locales/uk.json';
 
 const resources = {
   en: { translation: en },
   de: { translation: de },
   fr: { translation: fr },
   it: { translation: it },
+  uk: { translation: uk },
 };
 
 i18n
