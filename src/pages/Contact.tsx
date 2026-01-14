@@ -3,6 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 import { 
   Phone, 
   Mail, 
@@ -16,18 +17,10 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
-const services = [
-  "Общий ремонт",
-  "Малярные работы",
-  "Электрика",
-  "Сантехника",
-  "Плотницкие работы",
-  "Сборка мебели",
-  "Реновация",
-  "Другое",
-];
+const serviceKeys = ["repair", "painting", "electrical", "plumbing", "carpentry", "furniture", "renovation", "other"];
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -45,8 +38,8 @@ const Contact = () => {
     // Simulate submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
-    toast.success("Заявка отправлена!", {
-      description: "Мы свяжемся с вами в течение 30 минут.",
+    toast.success(t("contact.form.success"), {
+      description: t("contact.form.successDescription"),
     });
 
     setFormData({
@@ -66,6 +59,13 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const benefits = [
+    t("contact.benefits.estimate"),
+    t("contact.benefits.response"),
+    t("contact.benefits.warranty"),
+    t("contact.benefits.fixed"),
+  ];
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -74,11 +74,10 @@ const Contact = () => {
         <section className="py-20 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              Свяжитесь с нами
+              {t("contact.title")}
             </h1>
             <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-              Оставьте заявку онлайн или свяжитесь любым удобным способом. 
-              Мы ответим в течение 30 минут!
+              {t("contact.description")}
             </p>
           </div>
         </section>
@@ -91,20 +90,20 @@ const Contact = () => {
               <div className="space-y-8">
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-6">
-                    Контактная информация
+                    {t("contact.info.title")}
                   </h2>
                   <div className="space-y-6">
                     <a
-                      href="tel:+41791234567"
+                      href="tel:+41798135147"
                       className="flex items-start gap-4 group"
                     >
                       <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent transition-colors">
                         <Phone className="w-5 h-5 text-accent group-hover:text-accent-foreground transition-colors" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Телефон</p>
+                        <p className="text-sm text-muted-foreground">{t("contact.info.phone")}</p>
                         <p className="font-semibold text-foreground group-hover:text-accent transition-colors">
-                          +41 79 123 45 67
+                          +41 79 813 51 47
                         </p>
                       </div>
                     </a>
@@ -117,7 +116,7 @@ const Contact = () => {
                         <Mail className="w-5 h-5 text-accent group-hover:text-accent-foreground transition-colors" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Email</p>
+                        <p className="text-sm text-muted-foreground">{t("contact.info.email")}</p>
                         <p className="font-semibold text-foreground group-hover:text-accent transition-colors">
                           info@handyman-swiss.ch
                         </p>
@@ -129,7 +128,7 @@ const Contact = () => {
                         <MapPin className="w-5 h-5 text-accent" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Адрес</p>
+                        <p className="text-sm text-muted-foreground">{t("contact.info.address")}</p>
                         <p className="font-semibold text-foreground">
                           Bahnhofstrasse 15<br />
                           8001 Zürich
@@ -142,10 +141,10 @@ const Contact = () => {
                         <Clock className="w-5 h-5 text-accent" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Часы работы</p>
+                        <p className="text-sm text-muted-foreground">{t("contact.info.hours")}</p>
                         <p className="font-semibold text-foreground">
-                          Пн-Пт: 08:00 - 18:00<br />
-                          Сб: 09:00 - 14:00
+                          {t("contact.info.weekdays")}<br />
+                          {t("contact.info.saturday")}
                         </p>
                       </div>
                     </div>
@@ -154,14 +153,9 @@ const Contact = () => {
 
                 {/* Benefits */}
                 <div className="bg-secondary rounded-2xl p-6">
-                  <h3 className="font-semibold text-foreground mb-4">Почему мы?</h3>
+                  <h3 className="font-semibold text-foreground mb-4">{t("contact.benefits.title")}</h3>
                   <ul className="space-y-3">
-                    {[
-                      "Бесплатная оценка работ",
-                      "Ответ в течение 30 минут",
-                      "Гарантия на все работы",
-                      "Фиксированные цены",
-                    ].map((item) => (
+                    {benefits.map((item) => (
                       <li key={item} className="flex items-center gap-3 text-sm text-foreground">
                         <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
                         {item}
@@ -175,10 +169,10 @@ const Contact = () => {
               <div className="lg:col-span-2">
                 <div className="bg-card rounded-2xl p-8 shadow-card">
                   <h2 className="text-2xl font-bold text-foreground mb-2">
-                    Онлайн-запись
+                    {t("contact.form.title")}
                   </h2>
                   <p className="text-muted-foreground mb-8">
-                    Заполните форму, и мы свяжемся с вами для подтверждения
+                    {t("contact.form.description")}
                   </p>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -186,7 +180,7 @@ const Contact = () => {
                       {/* Name */}
                       <div>
                         <label className="block text-sm font-medium text-foreground mb-2">
-                          Ваше имя *
+                          {t("contact.form.name")} *
                         </label>
                         <div className="relative">
                           <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -196,7 +190,7 @@ const Contact = () => {
                             value={formData.name}
                             onChange={handleChange}
                             required
-                            placeholder="Иван Иванов"
+                            placeholder={t("contact.form.namePlaceholder")}
                             className="w-full pl-12 pr-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
                           />
                         </div>
@@ -205,7 +199,7 @@ const Contact = () => {
                       {/* Phone */}
                       <div>
                         <label className="block text-sm font-medium text-foreground mb-2">
-                          Телефон *
+                          {t("contact.form.phone")} *
                         </label>
                         <div className="relative">
                           <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -215,7 +209,7 @@ const Contact = () => {
                             value={formData.phone}
                             onChange={handleChange}
                             required
-                            placeholder="+41 79 123 45 67"
+                            placeholder="+41 79 813 51 47"
                             className="w-full pl-12 pr-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
                           />
                         </div>
@@ -224,7 +218,7 @@ const Contact = () => {
                       {/* Email */}
                       <div>
                         <label className="block text-sm font-medium text-foreground mb-2">
-                          Email
+                          {t("contact.form.email")}
                         </label>
                         <div className="relative">
                           <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -242,7 +236,7 @@ const Contact = () => {
                       {/* Date */}
                       <div>
                         <label className="block text-sm font-medium text-foreground mb-2">
-                          Желаемая дата
+                          {t("contact.form.date")}
                         </label>
                         <div className="relative">
                           <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -260,7 +254,7 @@ const Contact = () => {
                     {/* Service */}
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Тип услуги *
+                        {t("contact.form.service")} *
                       </label>
                       <select
                         name="service"
@@ -269,10 +263,10 @@ const Contact = () => {
                         required
                         className="w-full px-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent appearance-none"
                       >
-                        <option value="">Выберите услугу</option>
-                        {services.map((service) => (
-                          <option key={service} value={service}>
-                            {service}
+                        <option value="">{t("contact.form.servicePlaceholder")}</option>
+                        {serviceKeys.map((key) => (
+                          <option key={key} value={key}>
+                            {t(`contact.services.${key}`)}
                           </option>
                         ))}
                       </select>
@@ -281,7 +275,7 @@ const Contact = () => {
                     {/* Message */}
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Описание задачи
+                        {t("contact.form.message")}
                       </label>
                       <div className="relative">
                         <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-muted-foreground" />
@@ -290,7 +284,7 @@ const Contact = () => {
                           value={formData.message}
                           onChange={handleChange}
                           rows={4}
-                          placeholder="Опишите, что нужно сделать..."
+                          placeholder={t("contact.form.messagePlaceholder")}
                           className="w-full pl-12 pr-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
                         />
                       </div>
@@ -304,10 +298,10 @@ const Contact = () => {
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (
-                        "Отправка..."
+                        t("contact.form.submitting")
                       ) : (
                         <>
-                          Отправить заявку
+                          {t("contact.form.submit")}
                           <Send className="w-5 h-5 ml-2" />
                         </>
                       )}
@@ -325,7 +319,7 @@ const Contact = () => {
             <div className="text-center">
               <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
               <p className="text-lg font-semibold text-foreground">Bahnhofstrasse 15, 8001 Zürich</p>
-              <p className="text-muted-foreground">Карта будет здесь</p>
+              <p className="text-muted-foreground">{t("contact.map")}</p>
             </div>
           </div>
         </section>

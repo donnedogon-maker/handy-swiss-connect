@@ -133,6 +133,38 @@
       "title": "Join Our Satisfied Customers",
       "description": "Order our services and see the quality for yourself!",
       "button": "Book Online"
+    },
+    "reviewers": {
+      "anna": "Anna Müller",
+      "pierre": "Pierre Dubois",
+      "thomas": "Thomas Schmidt",
+      "sofia": "Sofia Bernasconi",
+      "max": "Max Weber",
+      "elena": "Elena Rossi"
+    },
+    "services": {
+      "bathroom": "Bathroom Renovation",
+      "ikea": "IKEA Kitchen Assembly",
+      "renovation": "Full Renovation",
+      "electrical": "Electrical",
+      "painting": "Apartment Painting",
+      "plumbing": "Plumbing"
+    },
+    "texts": {
+      "review1": "Excellent service! Marco and his team completely renovated our bathroom. The work was done on time and with the highest quality. Very punctual and neat craftsmen, they cleaned everything spotlessly.",
+      "review2": "Ordered assembly of a large IKEA kitchen. The work was done flawlessly — everything is level, securely fastened. The craftsman worked cleanly and quickly. I recommend to everyone who values quality!",
+      "review3": "Complete renovation of an 80m² apartment in 3 weeks. The result exceeded all expectations! From design to final cleaning — the team showed the highest professionalism. Special thanks for staying within budget.",
+      "review4": "Urgently needed electrical panel replacement. They arrived the same day, completed the work in 3 hours. Everything was explained, shown, warranty provided. Honest price, excellent quality!",
+      "review5": "Painted a three-room apartment in 2 days. Excellent quality, economical paint usage. The only thing — had to wait a bit due to workload, but the result was worth it.",
+      "review6": "Fixed a leak in the bathroom that others couldn't find for a month! Diagnosis took 20 minutes, repair — another hour. Now everything works perfectly. Thank you so much!"
+    },
+    "dates": {
+      "jan15": "January 15, 2024",
+      "jan8": "January 8, 2024",
+      "dec28": "December 28, 2023",
+      "dec20": "December 20, 2023",
+      "dec10": "December 10, 2023",
+      "dec1": "December 1, 2023"
     }
   },
   "gallery": {
@@ -161,7 +193,9 @@
       "bern": "Bern",
       "basel": "Basel",
       "lausanne": "Lausanne",
-      "lucerne": "Lucerne"
+      "lucerne": "Lucerne",
+      "lugano": "Lugano",
+      "zug": "Zug"
     }
   },
   "contact": {
@@ -236,7 +270,7 @@
     "subtitle": "Usually respond within 5 minutes",
     "greeting": "Hello! 👋 How can I help? Ask a question about our services or leave your contact for a callback.",
     "placeholder": "Type a message...",
-    "autoReply": "Thank you for your message! Our manager will contact you shortly. Or call us: +41 79 123 45 67"
+    "autoReply": "Thank you for your message! Our manager will contact you shortly. Or call us: +41 79 813 51 47"
   },
   "urgent": {
     "button": "URGENT",

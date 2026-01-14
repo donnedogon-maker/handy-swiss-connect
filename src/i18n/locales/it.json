@@ -133,6 +133,38 @@
       "title": "Unisciti ai nostri clienti soddisfatti",
       "description": "Ordina i nostri servizi e verifica la qualità di persona!",
       "button": "Prenota Online"
+    },
+    "reviewers": {
+      "anna": "Anna Müller",
+      "pierre": "Pierre Dubois",
+      "thomas": "Thomas Schmidt",
+      "sofia": "Sofia Bernasconi",
+      "max": "Max Weber",
+      "elena": "Elena Rossi"
+    },
+    "services": {
+      "bathroom": "Ristrutturazione bagno",
+      "ikea": "Montaggio cucina IKEA",
+      "renovation": "Ristrutturazione completa",
+      "electrical": "Elettricità",
+      "painting": "Pittura appartamento",
+      "plumbing": "Idraulica"
+    },
+    "texts": {
+      "review1": "Servizio eccellente! Marco e il suo team hanno rinnovato completamente il nostro bagno. Il lavoro è stato fatto nei tempi previsti e con la massima qualità. Artigiani molto puntuali e ordinati, hanno pulito tutto a specchio.",
+      "review2": "Ho ordinato il montaggio di una grande cucina IKEA. Il lavoro è stato fatto impeccabilmente — tutto è in bolla, fissato saldamente. L'artigiano ha lavorato in modo pulito e veloce. Lo consiglio a tutti coloro che apprezzano la qualità!",
+      "review3": "Ristrutturazione completa di un appartamento di 80m² in 3 settimane. Il risultato ha superato ogni aspettativa! Dalla progettazione alla pulizia finale — il team ha dimostrato la massima professionalità. Grazie speciale per il rispetto del budget.",
+      "review4": "Avevo bisogno urgente di sostituire il quadro elettrico. Sono arrivati lo stesso giorno, hanno completato il lavoro in 3 ore. Tutto è stato spiegato, mostrato, garanzia fornita. Prezzo onesto, qualità eccellente!",
+      "review5": "Appartamento di tre stanze dipinto in 2 giorni. Qualità eccellente, uso economico della vernice. L'unica cosa — ho dovuto aspettare un po' a causa del carico di lavoro, ma il risultato ne è valso la pena.",
+      "review6": "Hanno riparato una perdita nel bagno che altri non riuscivano a trovare da un mese! La diagnosi ha richiesto 20 minuti, la riparazione — un'altra ora. Ora tutto funziona perfettamente. Grazie mille!"
+    },
+    "dates": {
+      "jan15": "15 gennaio 2024",
+      "jan8": "8 gennaio 2024",
+      "dec28": "28 dicembre 2023",
+      "dec20": "20 dicembre 2023",
+      "dec10": "10 dicembre 2023",
+      "dec1": "1 dicembre 2023"
     }
   },
   "gallery": {
@@ -161,7 +193,9 @@
       "bern": "Berna",
       "basel": "Basilea",
       "lausanne": "Losanna",
-      "lucerne": "Lucerna"
+      "lucerne": "Lucerna",
+      "lugano": "Lugano",
+      "zug": "Zugo"
     }
   },
   "contact": {
@@ -236,7 +270,7 @@
     "subtitle": "Rispondiamo di solito entro 5 minuti",
     "greeting": "Ciao! 👋 Come posso aiutarti? Fai una domanda sui nostri servizi o lascia i tuoi contatti per essere richiamato.",
     "placeholder": "Scrivi un messaggio...",
-    "autoReply": "Grazie per il messaggio! Il nostro responsabile ti contatterà a breve. Oppure chiamaci: +41 79 123 45 67"
+    "autoReply": "Grazie per il messaggio! Il nostro responsabile ti contatterà a breve. Oppure chiamaci: +41 79 813 51 47"
   },
   "urgent": {
     "button": "URGENTE",

@@ -133,6 +133,38 @@
       "title": "Werden Sie Teil unserer zufriedenen Kunden",
       "description": "Bestellen Sie unsere Dienstleistungen und überzeugen Sie sich selbst!",
       "button": "Online buchen"
+    },
+    "reviewers": {
+      "anna": "Anna Müller",
+      "pierre": "Pierre Dubois",
+      "thomas": "Thomas Schmidt",
+      "sofia": "Sofia Bernasconi",
+      "max": "Max Weber",
+      "elena": "Elena Rossi"
+    },
+    "services": {
+      "bathroom": "Badezimmer-Renovierung",
+      "ikea": "IKEA Küchenmontage",
+      "renovation": "Komplettrenovierung",
+      "electrical": "Elektrik",
+      "painting": "Wohnungsanstrich",
+      "plumbing": "Sanitär"
+    },
+    "texts": {
+      "review1": "Ausgezeichneter Service! Marco und sein Team haben unser Badezimmer komplett renoviert. Die Arbeit wurde termingerecht und mit höchster Qualität ausgeführt. Sehr pünktliche und saubere Handwerker, sie haben alles blitzsauber gereinigt.",
+      "review2": "Habe die Montage einer großen IKEA-Küche bestellt. Die Arbeit wurde tadellos ausgeführt — alles ist gerade, sicher befestigt. Der Handwerker arbeitete sauber und schnell. Ich empfehle es jedem, der Qualität schätzt!",
+      "review3": "Komplettrenovierung einer 80m² Wohnung in 3 Wochen. Das Ergebnis hat alle Erwartungen übertroffen! Von der Planung bis zur Endreinigung — das Team zeigte höchste Professionalität. Besonderer Dank für die Einhaltung des Budgets.",
+      "review4": "Dringend Austausch des Elektropanels benötigt. Sie kamen am selben Tag, erledigten die Arbeit in 3 Stunden. Alles wurde erklärt, gezeigt, Garantie gegeben. Ehrlicher Preis, ausgezeichnete Qualität!",
+      "review5": "Drei-Zimmer-Wohnung in 2 Tagen gestrichen. Ausgezeichnete Qualität, sparsamer Farbverbrauch. Das Einzige — musste wegen Auslastung etwas warten, aber das Ergebnis war es wert.",
+      "review6": "Haben ein Leck im Badezimmer repariert, das andere einen Monat lang nicht finden konnten! Die Diagnose dauerte 20 Minuten, die Reparatur — noch eine Stunde. Jetzt funktioniert alles perfekt. Vielen Dank!"
+    },
+    "dates": {
+      "jan15": "15. Januar 2024",
+      "jan8": "8. Januar 2024",
+      "dec28": "28. Dezember 2023",
+      "dec20": "20. Dezember 2023",
+      "dec10": "10. Dezember 2023",
+      "dec1": "1. Dezember 2023"
     }
   },
   "gallery": {
@@ -161,7 +193,9 @@
       "bern": "Bern",
       "basel": "Basel",
       "lausanne": "Lausanne",
-      "lucerne": "Luzern"
+      "lucerne": "Luzern",
+      "lugano": "Lugano",
+      "zug": "Zug"
     }
   },
   "contact": {
@@ -236,7 +270,7 @@
     "subtitle": "Antworten normalerweise innerhalb von 5 Minuten",
     "greeting": "Hallo! 👋 Wie kann ich helfen? Stellen Sie eine Frage zu unseren Dienstleistungen oder hinterlassen Sie Ihre Kontaktdaten für einen Rückruf.",
     "placeholder": "Nachricht eingeben...",
-    "autoReply": "Vielen Dank für Ihre Nachricht! Unser Manager wird Sie in Kürze kontaktieren. Oder rufen Sie uns an: +41 79 123 45 67"
+    "autoReply": "Vielen Dank für Ihre Nachricht! Unser Manager wird Sie in Kürze kontaktieren. Oder rufen Sie uns an: +41 79 813 51 47"
   },
   "urgent": {
     "button": "DRINGEND",
