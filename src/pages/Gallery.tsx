@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
 
 import galleryBathroom from "@/assets/gallery-bathroom.jpg";
@@ -11,24 +12,25 @@ import galleryPainting from "@/assets/gallery-painting.jpg";
 import galleryElectrical from "@/assets/gallery-electrical.jpg";
 import galleryFurniture from "@/assets/gallery-furniture.jpg";
 
-const categories = ["Все", "Ванные", "Кухни", "Террасы", "Покраска", "Электрика", "Мебель"];
+const categoryKeys = ["all", "bathrooms", "kitchens", "terraces", "painting", "electrical", "furniture"];
 
 const galleryItems = [
-  { id: 1, image: galleryBathroom, category: "Ванные", title: "Реновация ванной комнаты", location: "Цюрих" },
-  { id: 2, image: galleryKitchen, category: "Кухни", title: "Установка кухни", location: "Женева" },
-  { id: 3, image: galleryTerrace, category: "Террасы", title: "Строительство террасы", location: "Берн" },
-  { id: 4, image: galleryPainting, category: "Покраска", title: "Покраска гостиной", location: "Базель" },
-  { id: 5, image: galleryElectrical, category: "Электрика", title: "Установка освещения", location: "Лозанна" },
-  { id: 6, image: galleryFurniture, category: "Мебель", title: "Сборка мебели", location: "Люцерн" },
+  { id: 1, image: galleryBathroom, categoryKey: "bathrooms", titleKey: "bathroom", locationKey: "zurich" },
+  { id: 2, image: galleryKitchen, categoryKey: "kitchens", titleKey: "kitchen", locationKey: "geneva" },
+  { id: 3, image: galleryTerrace, categoryKey: "terraces", titleKey: "terrace", locationKey: "bern" },
+  { id: 4, image: galleryPainting, categoryKey: "painting", titleKey: "painting", locationKey: "basel" },
+  { id: 5, image: galleryElectrical, categoryKey: "electrical", titleKey: "electrical", locationKey: "lausanne" },
+  { id: 6, image: galleryFurniture, categoryKey: "furniture", titleKey: "furniture", locationKey: "lucerne" },
 ];
 
 const Gallery = () => {
-  const [activeCategory, setActiveCategory] = useState("Все");
+  const { t } = useTranslation();
+  const [activeCategory, setActiveCategory] = useState("all");
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
-  const filteredItems = activeCategory === "Все"
+  const filteredItems = activeCategory === "all"
     ? galleryItems
-    : galleryItems.filter((item) => item.category === activeCategory);
+    : galleryItems.filter((item) => item.categoryKey === activeCategory);
 
   return (
     <div className="min-h-screen">
@@ -38,11 +40,10 @@ const Gallery = () => {
         <section className="py-20 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              Галерея работ
+              {t("gallery.title")}
             </h1>
             <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-              Посмотрите примеры наших проектов. Каждая работа выполнена 
-              с вниманием к деталям и швейцарским качеством.
+              {t("gallery.description")}
             </p>
           </div>
         </section>
@@ -51,17 +52,17 @@ const Gallery = () => {
         <section className="py-8 bg-background border-b border-border sticky top-20 z-40">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap gap-3 justify-center">
-              {categories.map((category) => (
+              {categoryKeys.map((key) => (
                 <button
-                  key={category}
-                  onClick={() => setActiveCategory(category)}
+                  key={key}
+                  onClick={() => setActiveCategory(key)}
                   className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
-                    activeCategory === category
+                    activeCategory === key
                       ? "bg-accent text-accent-foreground"
                       : "bg-muted text-muted-foreground hover:bg-muted/80"
                   }`}
                 >
-                  {category}
+                  {t(`gallery.categories.${key}`)}
                 </button>
               ))}
             </div>
@@ -81,16 +82,18 @@ const Gallery = () => {
                   <div className="aspect-square">
                     <img
                       src={item.image}
-                      alt={item.title}
+                      alt={t(`gallery.items.${item.titleKey}`)}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <h3 className="text-lg font-semibold text-primary-foreground mb-1">
-                        {item.title}
+                        {t(`gallery.items.${item.titleKey}`)}
                       </h3>
-                      <p className="text-sm text-primary-foreground/70">{item.location}</p>
+                      <p className="text-sm text-primary-foreground/70">
+                        {t(`gallery.locations.${item.locationKey}`)}
+                      </p>
                     </div>
                   </div>
                 </div>
