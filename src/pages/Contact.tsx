@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -10,14 +10,21 @@ import {
   Clock, 
   Send,
   CheckCircle2,
-  Calendar,
   User,
-  MessageSquare
+  MessageSquare,
+  ShieldCheck
 } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 
 const serviceKeys = ["repair", "painting", "electrical", "plumbing", "carpentry", "furniture", "renovation", "cleaning", "other"];
+
+// Generate simple math captcha
+const generateCaptcha = () => {
+  const num1 = Math.floor(Math.random() * 10) + 1;
+  const num2 = Math.floor(Math.random() * 10) + 1;
+  return { num1, num2, answer: num1 + num2 };
+};
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -26,13 +33,29 @@ const Contact = () => {
     email: "",
     phone: "",
     service: "",
-    date: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [captcha, setCaptcha] = useState(generateCaptcha());
+  const [captchaInput, setCaptchaInput] = useState("");
+  const [captchaError, setCaptchaError] = useState(false);
+
+  useEffect(() => {
+    setCaptcha(generateCaptcha());
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate captcha
+    if (parseInt(captchaInput) !== captcha.answer) {
+      setCaptchaError(true);
+      setCaptcha(generateCaptcha());
+      setCaptchaInput("");
+      return;
+    }
+    
+    setCaptchaError(false);
     setIsSubmitting(true);
 
     try {
@@ -42,7 +65,7 @@ const Contact = () => {
           email: formData.email,
           phone: formData.phone,
           service: t(`contact.services.${formData.service}`),
-          date: formData.date,
+          date: "",
           message: formData.message,
           urgent: false
         }
@@ -59,9 +82,10 @@ const Contact = () => {
         email: "",
         phone: "",
         service: "",
-        date: "",
         message: "",
       });
+      setCaptchaInput("");
+      setCaptcha(generateCaptcha());
     } catch (error) {
       console.error('Error sending email:', error);
       toast.error("Error sending request");
@@ -250,43 +274,26 @@ const Contact = () => {
                         </div>
                       </div>
 
-                      {/* Date */}
+                      {/* Service */}
                       <div>
                         <label className="block text-sm font-medium text-foreground mb-2">
-                          {t("contact.form.date")}
+                          {t("contact.form.service")} *
                         </label>
-                        <div className="relative">
-                          <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-                          <input
-                            type="date"
-                            name="date"
-                            value={formData.date}
-                            onChange={handleChange}
-                            className="w-full pl-12 pr-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
-                          />
-                        </div>
+                        <select
+                          name="service"
+                          value={formData.service}
+                          onChange={handleChange}
+                          required
+                          className="w-full px-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent appearance-none"
+                        >
+                          <option value="">{t("contact.form.servicePlaceholder")}</option>
+                          {serviceKeys.map((key) => (
+                            <option key={key} value={key}>
+                              {t(`contact.services.${key}`)}
+                            </option>
+                          ))}
+                        </select>
                       </div>
-                    </div>
-
-                    {/* Service */}
-                    <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
-                        {t("contact.form.service")} *
-                      </label>
-                      <select
-                        name="service"
-                        value={formData.service}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent appearance-none"
-                      >
-                        <option value="">{t("contact.form.servicePlaceholder")}</option>
-                        {serviceKeys.map((key) => (
-                          <option key={key} value={key}>
-                            {t(`contact.services.${key}`)}
-                          </option>
-                        ))}
-                      </select>
                     </div>
 
                     {/* Message */}
@@ -305,6 +312,39 @@ const Contact = () => {
                           className="w-full pl-12 pr-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
                         />
                       </div>
+                    </div>
+
+                    {/* Captcha */}
+                    <div>
+                      <label className="block text-sm font-medium text-foreground mb-2">
+                        {t("contact.form.captcha")} *
+                      </label>
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-2 bg-secondary px-4 py-3 rounded-xl">
+                          <ShieldCheck className="w-5 h-5 text-accent" />
+                          <span className="font-bold text-foreground text-lg">
+                            {captcha.num1} + {captcha.num2} = ?
+                          </span>
+                        </div>
+                        <input
+                          type="number"
+                          value={captchaInput}
+                          onChange={(e) => {
+                            setCaptchaInput(e.target.value);
+                            setCaptchaError(false);
+                          }}
+                          required
+                          placeholder="?"
+                          className={`w-24 px-4 py-3 bg-background border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent text-center text-lg font-bold ${
+                            captchaError ? "border-destructive" : "border-border"
+                          }`}
+                        />
+                      </div>
+                      {captchaError && (
+                        <p className="text-sm text-destructive mt-2">
+                          {t("contact.form.captchaError")}
+                        </p>
+                      )}
                     </div>
 
                     <Button
