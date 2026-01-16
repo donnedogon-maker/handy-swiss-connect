@@ -186,7 +186,7 @@ const handler = async (req: Request): Promise<Response> => {
     `;
 
     const emailResponse = await resend.emails.send({
-      from: "HandyMan Swiss <onboarding@resend.dev>",
+      from: "TipTop Service <noreply@tiptop-service.ch>",
       to: ["tiptopch@proton.me"],
       subject: `${urgent ? "⚡ СРОЧНО: " : ""}Новая заявка от ${safeName}`,
       html: emailHtml,
