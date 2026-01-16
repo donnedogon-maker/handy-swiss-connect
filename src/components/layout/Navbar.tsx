@@ -69,8 +69,17 @@ export const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center gap-3">
+          <div className="md:hidden flex items-center gap-2">
             <LanguageSwitcher />
+            <a
+              href="https://wa.me/41798135147"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-9 h-9 rounded-full bg-[#25D366] hover:bg-[#20BD5A] transition-colors shadow-md"
+              aria-label="WhatsApp"
+            >
+              <MessageCircle className="w-4 h-4 text-white" />
+            </a>
             <button
               className="p-2 text-foreground"
               onClick={() => setIsOpen(!isOpen)}
