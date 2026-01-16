@@ -242,7 +242,7 @@
       "servicePlaceholder": "Seleziona un servizio",
       "message": "Descrizione del lavoro",
       "messagePlaceholder": "Descrivi cosa deve essere fatto...",
-      "submit": "Invia richiesta",
+      "submit": "Ottieni preventivo",
       "submitting": "Invio in corso...",
       "success": "Richiesta inviata!",
       "successDescription": "Ti contatteremo entro 30 minuti."
@@ -280,7 +280,7 @@
     "terms": "Termini di utilizzo"
   },
   "chat": {
-    "title": "Supporto HandyMan",
+    "title": "Prenota ora",
     "subtitle": "Rispondiamo di solito entro 5 minuti",
     "greeting": "Ciao! 👋 Come posso aiutarti? Fai una domanda sui nostri servizi o lascia i tuoi contatti per essere richiamato.",
     "placeholder": "Scrivi un messaggio...",

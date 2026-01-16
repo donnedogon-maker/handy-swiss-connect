@@ -242,7 +242,7 @@
       "servicePlaceholder": "Select a service",
       "message": "Task Description",
       "messagePlaceholder": "Describe what needs to be done...",
-      "submit": "Submit Request",
+      "submit": "Get Price Quote",
       "submitting": "Submitting...",
       "success": "Request submitted!",
       "successDescription": "We'll contact you within 30 minutes."
@@ -280,7 +280,7 @@
     "terms": "Terms of Use"
   },
   "chat": {
-    "title": "HandyMan Support",
+    "title": "Book Now",
     "subtitle": "Usually respond within 5 minutes",
     "greeting": "Hello! 👋 How can I help? Ask a question about our services or leave your contact for a callback.",
     "placeholder": "Type a message...",

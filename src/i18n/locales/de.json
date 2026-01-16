@@ -242,7 +242,7 @@
       "servicePlaceholder": "Dienstleistung auswählen",
       "message": "Aufgabenbeschreibung",
       "messagePlaceholder": "Beschreiben Sie, was zu tun ist...",
-      "submit": "Anfrage senden",
+      "submit": "Preisangebot erhalten",
       "submitting": "Wird gesendet...",
       "success": "Anfrage gesendet!",
       "successDescription": "Wir kontaktieren Sie innerhalb von 30 Minuten."
@@ -280,7 +280,7 @@
     "terms": "Nutzungsbedingungen"
   },
   "chat": {
-    "title": "HandyMan Support",
+    "title": "Jetzt buchen",
     "subtitle": "Antworten normalerweise innerhalb von 5 Minuten",
     "greeting": "Hallo! 👋 Wie kann ich helfen? Stellen Sie eine Frage zu unseren Dienstleistungen oder hinterlassen Sie Ihre Kontaktdaten für einen Rückruf.",
     "placeholder": "Nachricht eingeben...",
