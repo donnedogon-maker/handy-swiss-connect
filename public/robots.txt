@@ -1,3 +1,16 @@
+# robots.txt for TipTop Service
+# https://tiptop-service.ch
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://tiptop-service.ch/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Specific bot permissions
 User-agent: Googlebot
 Allow: /
 
@@ -10,5 +23,9 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
+
+# Disallow admin/internal paths (if any)
+Disallow: /api/
+Disallow: /_/

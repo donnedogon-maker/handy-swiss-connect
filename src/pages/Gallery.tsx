@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { useTranslation } from "react-i18next";
+import { useSEO } from "@/hooks/useSEO";
 import { X } from "lucide-react";
 
 import galleryBathroom from "@/assets/gallery-bathroom.jpg";
@@ -30,6 +31,7 @@ const galleryItems = [
 
 const Gallery = () => {
   const { t } = useTranslation();
+  useSEO();
   const [activeCategory, setActiveCategory] = useState("all");
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 

@@ -3,6 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useSEO } from "@/hooks/useSEO";
 import { 
   Phone, 
   Mail, 
@@ -28,6 +29,7 @@ const generateCaptcha = () => {
 
 const Contact = () => {
   const { t } = useTranslation();
+  useSEO();
   const [formData, setFormData] = useState({
     name: "",
     email: "",

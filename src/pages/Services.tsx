@@ -3,7 +3,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { 
+import { useSEO } from "@/hooks/useSEO";
+import {
   Wrench, 
   Paintbrush, 
   Plug, 
@@ -73,6 +74,7 @@ const serviceData = [
 
 const Services = () => {
   const { t } = useTranslation();
+  useSEO();
 
   return (
     <div className="min-h-screen">

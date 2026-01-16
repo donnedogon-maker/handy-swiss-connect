@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useSEO } from "@/hooks/useSEO";
 import { Star, Quote, ArrowRight, ThumbsUp } from "lucide-react";
 
 const reviews = [
@@ -76,6 +77,7 @@ const reviews = [
 
 const Reviews = () => {
   const { t } = useTranslation();
+  useSEO();
 
   const stats = [
     { value: "500+", labelKey: "projects" },
