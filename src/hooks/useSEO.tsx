@@ -12,38 +12,38 @@ interface SEOConfig {
 }
 
 const defaultConfig: SEOConfig = {
-  title: "TipTop Service | Professioneller HandyMan Service in der Schweiz",
-  description: "Professionelle Reparatur- und Wartungsdienste in der Schweiz. Renovierung, Malerarbeiten, Elektrik, Sanitär, Möbelmontage. ☎ +41 79 813 51 47",
-  keywords: "handyman schweiz, reparatur zürich, renovierung, malerarbeiten, elektrik, sanitär",
+  title: "TipTop Service – Ihr Handwerker in Zürich & Schweiz | 24h Notdienst",
+  description: "★ Zuverlässiger Handyman in Zürich: Reparaturen, Renovierung, Elektrik, Sanitär, Malerarbeiten. Faire Preise ✓ Schnelle Termine ✓ 24h Notdienst ✓ ☎ +41 79 813 51 47",
+  keywords: "handwerker zürich, handyman schweiz, renovierung, malerarbeiten, elektrik, sanitär, 24h notdienst",
   type: "website",
   image: "https://tiptop-service.ch/og-image.jpg"
 };
 
 const pageConfigs: Record<string, SEOConfig> = {
   "/": {
-    title: "TipTop Service | Professioneller HandyMan Service in der Schweiz",
-    description: "Professionelle Reparatur- und Wartungsdienste in der Schweiz. Von kleinen Reparaturen bis zu großen Renovierungen. Schweizer Qualität. ☎ +41 79 813 51 47",
-    keywords: "handyman schweiz, reparatur zürich, renovierung schweiz, handwerker, hausmeister zürich"
+    title: "TipTop Service – Ihr Handwerker in Zürich & Schweiz | 24h Notdienst",
+    description: "★ Zuverlässiger Handyman in Zürich: Reparaturen, Renovierung, Elektrik, Sanitär, Malerarbeiten. Faire Preise ✓ Schnelle Termine ✓ 24h Notdienst ✓ Jetzt anfragen: +41 79 813 51 47",
+    keywords: "handwerker zürich, handyman schweiz, renovierung zürich, reparaturservice, hausmeister zürich, 24h notdienst"
   },
   "/services": {
-    title: "Unsere Dienstleistungen | TipTop Service Schweiz",
-    description: "Allgemeine Reparaturen, Malerarbeiten, Elektrik, Sanitär, Schreinerarbeiten, Möbelmontage, Renovierung. Professionelle Handwerkerleistungen in der Schweiz.",
-    keywords: "reparaturen zürich, malerarbeiten schweiz, elektrik installation, sanitär reparatur, möbelmontage ikea, renovierung"
+    title: "Handwerker-Leistungen Zürich | Elektrik, Sanitär, Renovierung – TipTop",
+    description: "Professionelle Handwerkerleistungen in Zürich: Elektrik ⚡ Sanitär 🔧 Malerarbeiten 🎨 Möbelmontage 🪑 Renovierung. Faire Preise, schnelle Termine. Jetzt anfragen!",
+    keywords: "elektriker zürich, sanitär zürich, malerarbeiten zürich, möbelmontage ikea, renovierung zürich, handwerker leistungen"
   },
   "/gallery": {
-    title: "Arbeitsgalerie | TipTop Service - Unsere Projekte",
-    description: "Sehen Sie Beispiele unserer abgeschlossenen Projekte. Badezimmer-Renovierungen, Küchen, Malerarbeiten und mehr. Schweizer Qualität.",
-    keywords: "renovierung beispiele, handwerker portfolio, badezimmer renovierung, küche montage, malerarbeiten galerie"
+    title: "Referenzen & Projekte | Handwerker Zürich – TipTop Service",
+    description: "Unsere abgeschlossenen Projekte: Badezimmer-Renovierung, Küchenmontage, Malerarbeiten, Elektroinstallationen. Überzeugen Sie sich von unserer Qualität!",
+    keywords: "handwerker referenzen, renovierung vorher nachher, badezimmer renovierung zürich, küche montage, projekte handwerker"
   },
   "/reviews": {
-    title: "Kundenbewertungen | TipTop Service - 4.9/5 Sterne",
-    description: "Lesen Sie echte Bewertungen unserer zufriedenen Kunden. Mehr als 500 positive Bewertungen. 4.9/5 Sterne Durchschnitt.",
-    keywords: "handyman bewertungen, kundenmeinungen, handwerker erfahrungen, tiptop service bewertung"
+    title: "Kundenbewertungen ★★★★★ 4.9/5 | TipTop Service Zürich",
+    description: "Über 200 zufriedene Kunden bewerten uns mit 4.9/5 Sternen. Lesen Sie echte Erfahrungsberichte unserer Kunden aus Zürich und der Schweiz.",
+    keywords: "handwerker bewertungen zürich, kundenmeinungen, erfahrungen tiptop service, handwerker empfehlung"
   },
   "/contact": {
-    title: "Kontakt | TipTop Service - Kostenlose Beratung",
-    description: "Kontaktieren Sie uns für eine kostenlose Beratung. Online-Buchung verfügbar. Antwort innerhalb von 30 Minuten. ☎ +41 79 813 51 47",
-    keywords: "handyman kontakt, kostenlose beratung, online buchung, handwerker zürich kontakt"
+    title: "Kontakt & Offerte | Handwerker Zürich – TipTop Service",
+    description: "Kostenlose Beratung & Offerte anfordern. Online-Buchung möglich. Antwort innerhalb 30 Min. ☎ +41 79 813 51 47 oder Formular ausfüllen.",
+    keywords: "handwerker kontakt zürich, offerte anfordern, kostenlose beratung, handwerker buchen online"
   }
 };
 
