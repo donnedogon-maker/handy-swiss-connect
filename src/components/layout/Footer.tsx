@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Wrench, Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   const { t } = useTranslation();
@@ -11,14 +12,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center">
-                <Wrench className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <div>
-                <span className="text-xl font-bold">HandyMan</span>
-                <span className="block text-xs text-primary-foreground/70">Swiss Quality</span>
-              </div>
+            <Link to="/" className="inline-block mb-6">
+              <img 
+                src={logo} 
+                alt="TipTop HandyMan Service" 
+                className="h-20 w-auto"
+              />
             </Link>
             <p className="text-sm text-primary-foreground/70 leading-relaxed">
               {t("footer.description")}
